@@ -28,7 +28,7 @@ RUN apt-get update && \
 	apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
     echo "America/Toronto" > /etc/timezone && \
-    echo "deb inverse.ca/debian wheezy wheezy" > /etc/sources.list.d/sogo.list && \
+    echo "deb inverse.ca/debian wheezy wheezy" > /etc/apt/sources.list.d/sogo.list && \
     apt-get update && \
     apt-key adv --keyserver keys.gnupg.net --recv-key 0x810273C4 && \
     apt-get update && \
